@@ -16,7 +16,11 @@ const userSchema = new Schema({
     companyPrice: Number,
     profit: Number,
     DebitAccount: Number,
-    comments: String
+    comments: String,
+    createdAt: {
+        type: Date,
+        default: Date.now
+    }
 })
 
 // create a model instance
